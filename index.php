@@ -102,14 +102,14 @@
                             <div class="slider-two"></div>
 
                             <div class="content text-right">
-                                <div class="large-text" data-animation="animated fadeInDown">We provide most authentic <br> landscaping service</div>
+                                <div class="large-text" data-animation="animated fadeInDown">Sistem Monitoring <br>Unsur Hara & Keasaman tanah </div>
 
                                 <div class="guard">
-                                    <p class="small-text" data-animation="animated fadeInLeft">If the unpredictable British weather isn't enough to counter your <br> desire to work outside, gardening is a great industry to get <br> involved in.</p>
+                                    <p class="small-text" data-animation="animated fadeInLeft">Unsur hara pada tanaman sangat mempengaruhi pertumbuhan tanaman <br> keasaman tanah berpengaruh terhadap persebaran dari unsur hara tanah.</p>
                                 </div>
 
                                 <div class="link-button" data-animation="animated fadeInUp">
-                                    <a href="#" class="btn btn-primary">Our Services</a>
+                                    <a href="#tentang" class="btn btn-primary">Tentang Alat</a>
                                 </div>
                             </div>
                         </div>
@@ -118,14 +118,14 @@
                             <div class="slider-three"></div>
 
                             <div class="content text-left">
-                                <div class="large-text" data-animation="animated fadeInDown">We provide most authentic <br> landscaping service</div>
+                            <div class="large-text" data-animation="animated fadeInDown">Sistem Monitoring <br>Unsur Hara & Keasaman tanah </div>
 
                                 <div class="guard">
-                                    <p class="small-text" data-animation="animated fadeInRight">If the unpredictable British weather isn't enough to counter your <br> desire to work outside, gardening is a great industry to get <br> involved in.</p>
+                                <p class="small-text" data-animation="animated fadeInLeft">Unsur hara pada tanaman sangat mempengaruhi pertumbuhan tanaman <br> keasaman tanah berpengaruh terhadap persebaran dari unsur hara tanah.</p>
                                 </div>
 
                                 <div class="link-button" data-animation="animated fadeInUp">
-                                    <a href="#" class="btn btn-primary">Our Services</a>
+                                    <a href="#tentang" class="btn btn-primary">Tentang Alat</a>
                                 </div>
                             </div>
                         </div>
