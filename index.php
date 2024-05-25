@@ -61,7 +61,7 @@
                         </div> -->
                         <div class="collapse navbar-collapse navbar-right">
                             <ul class="nav navbar-nav" style="display:inline; margin-left:10px;">
-                                <li><a href="index2.php">Home</a></li>
+                                <li><a href="index.php">Home</a></li>
                                 <li><a href="#tentang">Tentang</a></li>
                                 <li><a href="#galeri">Galeri</a></li>
                                 <li><a href="#iot">Monitoring</a></li>
@@ -70,7 +70,7 @@
                     </div> 
                 </nav>
                 <!-- <div class="small-view navbar-header inline-block visible-sm visible-xs">
-                    <a class="navbar-brand" href="index2.php"><img src="assets/images/logo-m.png" alt="image">TAGRINOV</a>
+                    <a class="navbar-brand" href="index.php"><img src="assets/images/logo-m.png" alt="image">TAGRINOV</a>
                 </div> -->
             </div>
         </header> <!-- header-section -->
@@ -402,7 +402,8 @@
                                 <table id="tabel" class="table table-sm table-centered mb-0">
                                     <thead>
                                         <tr>
-                                            <th scope="col">Tanggal & Waktu</th>
+                                            <th scope="col">Tanggal</th>
+                                            <th scope="col">Waktu</th>
                                             <th scope="col">Nitrogen</th>
                                             <th scope="col">Phosfor</th>
                                             <th scope="col">Kalium</th>
@@ -417,6 +418,7 @@
                                         ?>
                                         <tr>
                                             <td><?php echo $row['tanggal']?></td>
+                                            <td><?php echo $row['waktu']?></td>
                                             <td><?php echo $row['nitrogen']?></td>
                                             <td><?php echo $row['phosfor']?></td>
                                             <td><?php echo $row['kalium']?></td>
@@ -424,7 +426,7 @@
                                         </tr>
                                         <?php
                                         } if (mysqli_num_rows($query) == 0) {
-                                            echo '<tr><td colspan="5" class="text-center">Tidak ada data.</td></tr>';
+                                            echo '<tr><td colspan="6" class="text-center">Tidak ada data.</td></tr>';
                                         }?>
                                     </tbody>
                                 </table>
@@ -485,7 +487,7 @@
 
             <ul class="menu-wrapper">
                 <li>
-                    <a class="active" href="index2.php">Home <i aria-hidden="true"></i></a>
+                    <a class="active" href="index.php">Home <i aria-hidden="true"></i></a>
                 </li>
 
                 <li>
@@ -562,10 +564,10 @@
 
         <script>
             // new DataTable('#tabel', {
-            //     info: false,
+            //     info: true,
             //     ordering: true,
-            //     paging: false,
-            //     searching: false,
+            //     paging: true,
+            //     searching: true,
             // });
         </script>
 

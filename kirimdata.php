@@ -8,9 +8,14 @@
     $kalium = $_GET["kalium"];
     $ph = $_GET['ph'];
 
+    //setting tanggal dan jam
+    date_default_timezone_set("Asia/Jakarta");
+    $tanggal = date('Y-m-d');
+    $jam = date('H:i:sa');
+
     mysqli_query($koneksi, "ALTER TABLE tb_sensor AUTO_INCREMENT =1");
 
-    $simpan = mysqli_query($koneksi, "INSERT INTO tb_sensor(nitrogen, phosfor, kalium, ph)VALUES('$nitrogen', '$phosfor', '$kalium', '$ph')");
+    $simpan = mysqli_query($koneksi, "INSERT INTO tb_sensor(tanggal, waktu, nitrogen, phosfor, kalium, ph)VALUES('$tanggal', '$jam', '$nitrogen', '$phosfor', '$kalium', '$ph')");
     
     if($simpan){
         echo "Berhasil Masuk Database";
