@@ -393,6 +393,7 @@
            <div class="container">
            <div class="section-title text-center" >
                 <h2>Tabel <span class="text-color">Monitoring</span></h2>
+                <a href="excel.php" class="btn btn-sm btn-primary">Download</a>
                 <p>Berikut ini merupakan tabel nilai sensor yang tersimpan di database.</p>
             </div> <!-- section-title -->
             <!-- <div class="row"> -->
@@ -412,7 +413,7 @@
                                     </thead>
                                     <tbody>
                                         <?php
-                                        $sql = "SELECT * FROM tb_sensor";
+                                        $sql = "SELECT * FROM tb_sensor ORDER BY tanggal DESC";
                                         $query = mysqli_query($koneksi, $sql);
                                         while ($row = mysqli_fetch_array($query)){
                                         ?>
@@ -522,8 +523,8 @@
         <script src="assets/js/script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-        <script>
-            new DataTable('#tabel', {
+        <!-- <script>
+            new DataTable('#', {
                 layout: {
                     topStart: {
                         buttons: [
@@ -545,7 +546,7 @@
                     }
                 }
             });
-        </script>
+        </script> -->
 
          <!-- Datatables js -->
         <script src="assets/vendor/datatables.net/js/jquery.dataTables.min.js"></script>
@@ -563,12 +564,12 @@
         <script src="assets/vendor/datatables.net-select/js/dataTables.select.min.js"></script>
 
         <script>
-            // new DataTable('#tabel', {
-            //     info: true,
-            //     ordering: true,
-            //     paging: true,
-            //     searching: true,
-            // });
+            new DataTable('#tabel', {
+                info: true,
+                ordering: true,
+                paging: true,
+                searching: true,
+            });
         </script>
 
     </body>
