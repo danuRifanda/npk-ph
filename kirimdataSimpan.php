@@ -13,15 +13,15 @@
     $tanggal = date('Y-m-d');
     $jam = date('H:i:sa');
 
-    mysqli_query($koneksi, "ALTER TABLE tb_sensor AUTO_INCREMENT =1");
+    mysqli_query($koneksi, "ALTER TABLE tb_data AUTO_INCREMENT =1");
 
-    $simpan = mysqli_query($koneksi, "INSERT INTO tb_sensor(tanggal, waktu, nitrogen, phosfor, kalium, ph)VALUES('$tanggal', '$jam', '$nitrogen', '$phosfor', '$kalium', '$ph')");
+    $simpan = mysqli_query($koneksi, "INSERT INTO tb_data(tanggal, waktu, nitrogen, phosfor, kalium, ph)VALUES('$tanggal', '$jam', '$nitrogen', '$phosfor', '$kalium', '$ph')");
     
     if($simpan){
-        echo "Berhasil Masuk Database";
+        echo "Berhasil Tersimpan";
     }
     else{
-        echo "Gagal masuk database";
+        echo "Gagal Tersimpan";
     }
 
 ?>

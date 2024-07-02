@@ -413,7 +413,7 @@
                                     </thead>
                                     <tbody>
                                         <?php
-                                        $sql = "SELECT * FROM tb_sensor ORDER BY tanggal DESC";
+                                        $sql = "SELECT * FROM tb_data ORDER BY tanggal DESC";
                                         $query = mysqli_query($koneksi, $sql);
                                         while ($row = mysqli_fetch_array($query)){
                                         ?>

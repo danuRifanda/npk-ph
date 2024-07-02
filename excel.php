@@ -1,6 +1,6 @@
 <?php
     include "koneksi.php";
-    $query = "SELECT * FROM tb_sensor ORDER BY tanggal DESC";
+    $query = "SELECT * FROM tb_data ORDER BY tanggal DESC";
     $result = mysqli_query($koneksi, $query);
     $no = 0;
     header("Content-type: application/vnd-ms-excel");
